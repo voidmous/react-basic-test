@@ -18,7 +18,9 @@ const initialState = {
   count: 10
 };
 
+
 function reducer(state = initialState, action) {
+  console.log('Action dispatched: ', JSON.stringify(action));
   switch(action.type) {
     case 'INCREMENT':
       return {
